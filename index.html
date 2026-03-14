@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química | Estequiometría</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Módulo de Estequiometría</h1>
+        <p>Herramienta educativa para el análisis de reacciones químicas</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="card">
+            <header class="card-header">
+                <h2>01. Fundamentos Primordiales</h2>
+            </header>
+            <div class="card-body">
+                <p>La estequiometría estudia las relaciones cuantitativas entre reactivos y productos. El balanceo garantiza el cumplimiento de la <strong>Ley de Conservación de la Masa</strong>. 
+                    La estequiometría es la rama de la química que estudia las relaciones cuantitativas (masa, moles, volumen) entre reactivos y productos en una reacción química. Se basa en leyes de conservación de la materia, utilizando ecuaciones balanceadas para determinar cuánto producto se forma o cuánto reactivo se necesita, siendo fundamental para la industria y el laboratorio.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <header class="card-header">
+                <h2>02. Laboratorio de Práctica</h2>
+            </header>
+            <div class="card-body">
+                <p>Asigne los coeficientes para la combustión del propano:</p>
+                <div class="logic-container">
+                    <input type="number" id="input_c3h8" class="coeff-input" placeholder="0"> C₃H₈ + 
+                    <input type="number" id="input_o2" class="coeff-input" placeholder="0"> O₂ → 
+                    <input type="number" id="input_co2" class="coeff-input" placeholder="0"> CO₂ + 
+                    <input type="number" id="input_h2o" class="coeff-input" placeholder="0"> H₂O
+                </div>
+                <button class="btn btn-primary" onclick="validateExercise()">Verificar Balanceo</button>
+                <p id="feedback_msg"></p> </div>
+        </section>
+
+        <section class="card">
+            <header class="card-header">
+                <h2>03. Motor de Balanceo Automático</h2>
+            </header>
+            <div class="card-body">
+                <div class="input-group-vertical">
+                    <input type="text" id="user_equation" class="full-width-input" placeholder="Escriba la ecuación (Ej: N2 + H2 = NH3)">
+                    <button class="btn btn-accent" onclick="solveEquation()">Resolver Ecuación</button>
+                </div>
+                <div id="solver_output" style="margin-top: 15px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <header class="card-header">
+                <h2>04. Material de Referencia</h2>
+            </header>
+            <div class="card-body">
+                <figure class="periodic-table-wrapper">
+                    <img src="https://images.squarespace-cdn.com/content/5ab4e74bc258b487055bc91b/1686944992640-T1PDCHFG1UWUQZWB08V8/Spanish+Periodic+Table+Poster.png?format=1500w&content-type=image%2Fpng" alt="Tabla Periódica">
+                    <figcaption>Figura 1: Tabla periódica de los elementos.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
