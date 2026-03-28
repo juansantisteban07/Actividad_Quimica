@@ -141,3 +141,38 @@ body {
     margin-top: 10px;
     letter-spacing: 1px;
 }
+
+/* ... Tus estilos base ... */
+:root {
+    --forest: #1b4332;
+    --leaf: #2d6a4f;
+    --moss: #d8f3dc;
+    --sky: #f0f7f4;
+    --white: #ffffff;
+    --accent-line: #95d5b2;
+}
+
+
+.coeff {
+    font-weight: 900;
+    color: var(--white);
+    background: var(--leaf);
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-right: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.final-eq {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+#stoich_output li {
+    list-style: none;
+    padding: 4px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
