@@ -22,7 +22,7 @@
             </header>
             <div class="card-body">
                 <p>La estequiometría estudia las relaciones cuantitativas entre reactivos y productos. El balanceo garantiza el cumplimiento de la <strong>Ley de Conservación de la Masa</strong>. 
-                    La estequiometría es la rama de la química que estudia las relaciones cuantitativas (masa, moles, volumen) entre reactivos y productos en una reacción química. Se basa en leyes de conservación de la materia, utilizando ecuaciones balanceadas para determinar cuánto producto se forma o cuánto reactivo se necesita, siendo fundamental para la industria y el laboratorio.</p>
+                    La estequiometría es la rama de la química que estudia las relaciones cuantitativas (masa, moles, volumen) entre reactivos y productos en una reacción química.</p>
             </div>
         </section>
 
@@ -39,17 +39,18 @@
                     <input type="number" id="input_h2o" class="coeff-input" placeholder="0"> H₂O
                 </div>
                 <button class="btn btn-primary" onclick="validateExercise()">Verificar Balanceo</button>
-                <p id="feedback_msg"></p> </div>
+                <p id="feedback_msg"></p> 
+            </div>
         </section>
 
         <section class="card">
             <header class="card-header">
-                <h2>03. Motor de Balanceo Automático</h2>
+                <h2>03. Motor de Balanceo y Reactivo Límite</h2>
             </header>
             <div class="card-body">
                 <div class="input-group-vertical">
                     <input type="text" id="user_equation" class="full-width-input" placeholder="Escriba la ecuación (Ej: N2 + H2 = NH3)">
-                    <button class="btn btn-accent" onclick="solveEquation()">Resolver Ecuación</button>
+                    <button class="btn btn-accent" onclick="solveEquation()">Resolver y Analizar</button>
                 </div>
                 <div id="solver_output" style="margin-top: 15px; font-weight: bold;"></div>
             </div>

@@ -53,7 +53,6 @@ body {
 
 .card-body { padding: 2rem; }
 
-/* Estilo para el motor de balanceo (Input largo) */
 .input-group-vertical {
     display: flex;
     flex-direction: column;
@@ -61,25 +60,17 @@ body {
 }
 
 .full-width-input {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    box-sizing: border-box; /* Asegura que el padding no lo estire de más */
+    width: 100%;
+    box-sizing: border-box;
     padding: 15px;
     border: 2px solid var(--moss);
     border-radius: 10px;
     font-size: 1rem;
-    font-family: 'Courier New', monospace; /* Fuente técnica */
+    font-family: 'Courier New', monospace;
     background: #fafdfb;
     transition: 0.3s;
 }
 
-.full-width-input:focus {
-    outline: none;
-    border-color: var(--leaf);
-    background: white;
-    box-shadow: 0 0 8px rgba(45, 106, 79, 0.1);
-}
-
-/* Otros elementos */
 .logic-container {
     background: var(--sky);
     padding: 20px;
@@ -109,11 +100,8 @@ body {
 .btn-primary { background: var(--leaf); color: white; }
 .btn-accent { background: #604d3f; color: white; }
 
-.btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
-
-/* Ajuste de la tabla periódica */
 .periodic-table-wrapper {
-    width: 90%;
+    width: 100%;
     overflow-x: auto;
     text-align: center;
     border: 2px solid var(--moss);
@@ -124,34 +112,7 @@ body {
 .periodic-table-wrapper img {
     max-width: 100%;
     height: auto;
-    filter: hue-rotate(40deg) saturate(0.8); /* Efecto químico verde */
 }
-
-.coeff {
-    font-weight: 900;
-    color: #1b4332;
-    background: rgba(255,255,255,0.5);
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-right: 2px;
-}
-
-.final-eq {
-    font-size: 1.3rem;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
-
-/* ... Tus estilos base ... */
-:root {
-    --forest: #1b4332;
-    --leaf: #2d6a4f;
-    --moss: #d8f3dc;
-    --sky: #f0f7f4;
-    --white: #ffffff;
-    --accent-line: #95d5b2;
-}
-
 
 .coeff {
     font-weight: 900;
@@ -160,19 +121,31 @@ body {
     padding: 2px 8px;
     border-radius: 6px;
     margin-right: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .final-eq {
     font-size: 1.4rem;
     margin-top: 10px;
-    letter-spacing: 1px;
     font-family: 'Courier New', monospace;
-    font-weight: bold;
 }
 
-#stoich_output li {
-    list-style: none;
-    padding: 4px 0;
-    border-bottom: 1px dashed rgba(0,0,0,0.1);
+.check-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+.check-table th, .check-table td {
+    padding: 8px;
+    border: 1px solid var(--moss);
+    text-align: center;
+}
+
+.moles-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Quicksand', sans-serif;
 }
