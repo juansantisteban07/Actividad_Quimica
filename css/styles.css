@@ -101,7 +101,7 @@ body {
 .btn-accent { background: #604d3f; color: white; }
 
 .periodic-table-wrapper {
-    width: 100%;
+    width: 80%;
     overflow-x: auto;
     text-align: center;
     border: 2px solid var(--moss);
